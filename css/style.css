@@ -12,7 +12,12 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--background);
+    border-bottom: 5px solid #000;
+}
+
+button {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 main {
@@ -24,11 +29,11 @@ footer {
     margin-top: 6vh;
     display: flex;
     justify-content: center;
-    border-top: 2px solid #000;
+    border-top: 5px solid #000;
 }
 
 .container {
-    border: 2px solid #000;
+    border: 5px solid #000;
     width: fit-content;
     padding: 20px;
     margin-top: 20vh;
@@ -36,7 +41,16 @@ footer {
 }
 
 #hora {
-
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     margin-bottom: 10px;
+}
+
+
+li {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    margin-top: 9vh;
 }
