@@ -13,6 +13,9 @@ const reloj = () => {
   }
   //console.log(minutos);
   let segundos = fecha.getSeconds();
+  if (segundos < 10) {
+    segundos = `0${segundos}`;
+  }
   //console.log(segundos);
   let diaSemana = fecha.getDay();
   //console.log(diaSemana);
