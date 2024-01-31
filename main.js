@@ -108,7 +108,20 @@ const reloj = () => {
 
 setInterval(reloj, 1000);
 
-
-
+const coloresRandom = document.getElementById('cambiarColores');
+const cuerpo = document.body;
+const cabezal = document.getElementById('cabezal');
+function generarColores() {
+  let bg = '#' + Math.floor(Math.random()*16777215).toString(16);
+  cuerpo.style.backgroundColor = bg;
+  let pr = '#' + Math.floor(Math.random()*167772412).toString(16);
+  let relojCompleto = document.getElementById('relojCompleto');
+  relojCompleto.style.backgroundColor = pr;
+  let cl = '#' + Math.floor(Math.random()*16777751).toString(16);
+  relojCompleto.style.color = cl;
+  cabezal.style.backgroundColor = pr;
+  cabezal.style.color = cl;
+}
+coloresRandom.addEventListener('click', generarColores);
 
 
